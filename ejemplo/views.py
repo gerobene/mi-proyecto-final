@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, "ejemplo/saludar.html")
+    return render(request, "ejemplo/saludar.html", {"nombre":"Gero"}, {"apellido":"Benedetti"})
     
-# Create your views here.
